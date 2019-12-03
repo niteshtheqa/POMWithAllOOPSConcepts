@@ -44,7 +44,7 @@ public class BaseTest {
 			driver = new InternetExplorerDriver();
 		}
 		driver.get("http://automationpractice.com/index.php");
-		//driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		page = new BasePage(this.driver);
 	
 
