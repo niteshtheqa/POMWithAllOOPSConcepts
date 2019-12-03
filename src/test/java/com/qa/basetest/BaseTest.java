@@ -30,7 +30,7 @@ public class BaseTest {
 
 	@BeforeMethod
 	@Parameters(value = { "browser" })
-	public void setUpTest(@Optional("ff")String browser) throws InterruptedException {
+	public void setUpTest(@Optional("chrome")String browser) throws InterruptedException {
 
 		if (browser.equalsIgnoreCase("ff")) {
 			WebDriverManager.firefoxdriver().setup();
@@ -44,7 +44,7 @@ public class BaseTest {
 			driver = new InternetExplorerDriver();
 		}
 		driver.get("http://automationpractice.com/index.php");
-		driver.manage().window().fullscreen();
+		//driver.manage().window().maximize();
 		page = new BasePage(this.driver);
 	
 
