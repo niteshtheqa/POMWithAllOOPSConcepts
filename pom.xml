@@ -10,7 +10,7 @@
 
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.sourceEncoding>UTF-16</project.build.sourceEncoding>
 	</properties>
 
 
@@ -116,8 +116,8 @@
 				<configuration>
 					<verbose>true</verbose>
 					<fork>true</fork>
-					<executable>C:\Program Files\Java\jdk1.8.0_101\bin\javac</executable>
-					<compilerVersion>1.8</compilerVersion>
+					<executable>/Library/Java/JavaVirtualMachines/adoptopenjdk-16.jdk/Contents/Home/bin/java</executable>
+					<compilerVersion>16</compilerVersion>
 				</configuration>
 			</plugin>
 		</plugins>
